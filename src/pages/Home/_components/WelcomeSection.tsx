@@ -1,10 +1,9 @@
 import cv from "@/assets/CV.pdf";
 
-import { Download, GithubIcon, LinkIcon } from "lucide-react";
+import { Download, GithubIcon } from "lucide-react";
 
 import { GridBackground } from "@/components/ui/GridBackground";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 
 export const WelcomeSection = () => {
