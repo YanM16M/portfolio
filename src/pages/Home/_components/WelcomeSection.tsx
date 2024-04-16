@@ -1,3 +1,5 @@
+import cv from "@/assets/CV.pdf";
+
 import { Download, GithubIcon, LinkIcon } from "lucide-react";
 
 import { GridBackground } from "@/components/ui/GridBackground";
@@ -37,14 +39,16 @@ export const WelcomeSection = () => {
                 </div>
                 <div className="space-x-2">
                     <Button className="font-bold" asChild>
-                        <Link to="/">
+                        <a href="https://github.com/YanM16M" target="_blank">
                             Github
                             <GithubIcon className="ml-2" />
-                        </Link>
+                        </a>
                     </Button>
-                    <Button variant="custom">
-                        Download CV
-                        <Download className="ml-2" />
+                    <Button variant="custom" asChild>
+                        <a href={cv} target="_blank">
+                            Download CV
+                            <Download className="ml-2" />
+                        </a>
                     </Button>
                 </div>
             </GridBackground>
