@@ -8,12 +8,12 @@ import { Badge } from "@/components/ui/badge";
 
 export const WelcomeSection = () => {
 
-    const getNumberOfExperience = () => {
-        const startDate = new Date("01/09/2020");
-        const today = new Date();
+    // const getNumberOfExperience = () => {
+    //     const startDate = new Date("01/09/2020");
+    //     const today = new Date();
 
-        return (today.getFullYear() - startDate.getFullYear());
-    }
+    //     return (today.getFullYear() - startDate.getFullYear());
+    // }
 
     return (
         <section className="h-full flex flex-col gap-y-3 items-center justify-center">
