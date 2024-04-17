@@ -49,7 +49,7 @@ const skills = [
         for: "backend"
     },
     {
-        key: 7,
+        key: 8,
         icon: <TbBrandMongodb size={40} />,
         label: "MongoDB",
         for: "backend"
@@ -59,7 +59,7 @@ const skills = [
 export const SkillsSection = () => {
     return (
         <section className="flex flex-col items-center gap-20">
-            <h1 className="text-5xl font-thin text-center">Compétences informatiques</h1>
+            <h1 className="text-5xl font-thin text-center">Skills</h1>
             <div className="flex flex-col items-center gap-y-10">
                 <h2 className="text-2xl">Front-End</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 transition">

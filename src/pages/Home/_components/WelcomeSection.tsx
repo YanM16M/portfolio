@@ -1,10 +1,11 @@
 import cv from "@/assets/CV.pdf";
 
-import { Download, GithubIcon } from "lucide-react";
+import { Download } from "lucide-react";
 
 import { GridBackground } from "@/components/ui/GridBackground";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { FiGithub } from "react-icons/fi";
 
 export const WelcomeSection = () => {
 
@@ -40,7 +41,7 @@ export const WelcomeSection = () => {
                     <Button className="font-bold" asChild>
                         <a href="https://github.com/YanM16M" target="_blank">
                             Github
-                            <GithubIcon className="ml-2" />
+                            <FiGithub className="ml-2" />
                         </a>
                     </Button>
                     <Button variant="custom" asChild>

@@ -3,75 +3,104 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiShadcnui, SiMysql, SiRubyonrails  } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
 
 interface PreviewProps {
     src: string;
     title: string;
     description: string;
     technologies?: string[];
+    url?: string;
+    githubUrl?: string;
 }
 
 export const Preview = ({
     src,
     title,
     description,
-    technologies
+    technologies,
+    url,
+    githubUrl
 }: PreviewProps) => {
     return (
-        <div className="max-w-lg rounded-lg shadow-md hover:shadow-lg hover:scale-105 cursor-pointer transition duration-300
+        <div className="max-w-lg h-[500px] flex flex-col pb-4 rounded-lg shadow-md hover:shadow-lg hover:scale-105 cursor-pointer transition duration-300
         dark:bg-secondary">
             <img 
                 src={src}
                 className="w-full"
                 alt="preview"
             />
-            <div className="p-4 space-y-2">
+            <div className="flex flex-col flex-1 items-stretch gap-y-2 p-4">
                 <h2 className="font-bold text-lg uppercase">{title}</h2>
                 <p className="text-justify text-clamp-3">{description}</p>
-                <div className="flex flex-wrap gap-4 pt-2">
+                <div className="flex gap-4 py-4">
                     {technologies?.includes("react") && (
                         <Badge variant="outline" className="flex items-center text-primary text-xs font-semibold uppercase gap-x-2">
-                            <FaReact size={24} color="cyan" />
+                            <FaReact size={18} color="cyan" />
                             ReactJS
                         </Badge>
                     )}
                     {technologies?.includes("tailwind") && (
                         <Badge variant="outline" className="flex items-center text-primary text-xs font-semibold uppercase gap-x-2">
-                            <SiTailwindcss  size={28} color="blue" />
+                            <SiTailwindcss  size={18} color="blue" />
                             TailwindCss
                         </Badge>
                     )}
                     {technologies?.includes("shadcnui") && (
                         <Badge variant="outline" className="flex items-center text-primary text-xs font-semibold uppercase gap-x-2">
-                            <SiShadcnui size={22} color="black" />
+                            <SiShadcnui size={18} color="black" />
                             shadcn-ui
                         </Badge>
                     )}
                     {technologies?.includes("nextjs") && (
                         <Badge variant="outline" className="flex items-center text-primary text-xs font-semibold uppercase gap-x-2">
-                            <TbBrandNextjs size={28} color="green" />
+                            <TbBrandNextjs size={18} color="green" />
                             NextJS
                         </Badge>
                     )}
                     {technologies?.includes("mysql") && (
                         <Badge variant="outline" className="flex items-center text-primary text-xs font-semibold uppercase gap-x-2">
-                            <SiMysql size={28} color="orange" />
+                            <SiMysql size={18} color="orange" />
                             MySQL
                         </Badge>
                     )}
                     {technologies?.includes("php") && (
                         <Badge variant="outline" className="flex items-center text-primary text-xs font-semibold uppercase gap-x-2">
-                            <FaPhp size={28} color="indigo" />
+                            <FaPhp size={18} color="indigo" />
                             PHP
                         </Badge>
                     )}
                     {technologies?.includes("rails") && (
                         <Badge variant="outline" className="flex items-center text-primary text-xs font-semibold uppercase gap-x-2">
-                            <SiRubyonrails size={28} color="red" />
+                            <SiRubyonrails size={18} color="red" />
                             rails
                         </Badge>
                     )}
                 </div>
+            </div>
+            <div className="flex gap-2 px-4">
+                {url ? (
+                    <Button variant="outline" asChild>
+                        <a href={url} target="_blank">
+                            See Live
+                        </a>
+                    </Button>
+                ) : (
+                    <Button variant="outline" disabled={true}>
+                        No Live
+                    </Button>
+                )}
+                {githubUrl ? (
+                    <Button asChild>
+                        <a href={githubUrl} target="_blank">
+                            Source Code
+                        </a>
+                    </Button>
+                ): (
+                    <Button disabled={true}>
+                        No Source Code
+                    </Button>
+                )}
             </div>
         </div>
     )

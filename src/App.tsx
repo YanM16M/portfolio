@@ -1,8 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import HomePage from "./pages/Home/Home";
-import { Navbar } from "./components/navbar";
 import { ThemeProvider } from "./components/providers/theme-provider";
+
+import { Navbar } from "./components/navbar";
+import { Footer } from "./components/footer";
+
+import HomePage from "./pages/Home/Home";
 
 function App() {
     return (
@@ -15,9 +18,7 @@ function App() {
                       <Route path="/" element={<HomePage />} />
                   </Routes>
               </main>
-              <div>
-                Footer
-              </div>
+              <Footer />
             </div>
           </ThemeProvider>
         </BrowserRouter>
