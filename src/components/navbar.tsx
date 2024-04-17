@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import { ModeToggle } from "./mode-toggle"
 import { Button } from "./ui/button"
 import { FiGithub } from "react-icons/fi"
 import { LiaLinkedinIn } from "react-icons/lia"
