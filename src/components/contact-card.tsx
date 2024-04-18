@@ -16,7 +16,7 @@ export const ContactCard = ({
     url
 }: ContactCardProps) => {
     return (
-        <Link to={url} className="group w-full max-w-xl flex items-center justify-between p-4 border rounded-lg shadow-sm transition
+        <Link to={url} target="_blank" className="group w-full max-w-xl flex items-center justify-between p-4 border rounded-lg shadow-sm transition
         hover:-translate-y-2 hover:cursor-pointer">
             <div className="flex items-center gap-2">
                 <div className="p-4 border rounded-full">

@@ -27,16 +27,8 @@ export const WelcomeSection = () => {
                     </span>
                 </h1>
                 <span className="text-lg font-semibold">
-                    I'm a frontend and backend developer
+                    I am a frontend and backend developer
                 </span>
-                <div>
-                    <Badge variant="outline" className="w-[175px] flex flex-col text-center rounded-lg border-black p-4">
-                        <span className="text-6xl font-anton">
-                            {3}
-                        </span>
-                        <span className="font-semibold text-md">ans d'expérience</span>
-                    </Badge>
-                </div>
                 <div className="space-x-2">
                     <Button className="font-bold" asChild>
                         <a href="https://github.com/YanM16M" target="_blank">
