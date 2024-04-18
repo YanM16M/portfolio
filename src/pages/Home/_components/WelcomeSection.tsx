@@ -4,7 +4,6 @@ import { Download } from "lucide-react";
 
 import { GridBackground } from "@/components/ui/GridBackground";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { FiGithub } from "react-icons/fi";
 
 export const WelcomeSection = () => {
