@@ -10,12 +10,16 @@ import { useScrollTop } from "@/hooks/use-control-top";
 export const Navbar = () => {
     const scrolled = useScrollTop();
 
+    const onClick = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
     return (
-        <nav className="fixed w-full flex items-center justify-between max-sm:justify-center px-6 py-8 z-[99999]">
-            <Link to="/" className="max-sm:hidden font-medium text-3xl drop-shadow-md">
+        <nav className="fixed top-0 w-full flex items-center justify-between max-sm:justify-center px-6 py-8 z-[50]">
+            <Link to="/" onClick={onClick} className="max-sm:hidden font-medium text-3xl drop-shadow-md">
                 Portfolio
             </Link>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 ">
                 <Button variant="outline" className={cn(
                     "hover:text-emerald-500 hover:cursor-pointer transition",
                     scrolled && "shadow-md"

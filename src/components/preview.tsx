@@ -33,7 +33,7 @@ export const Preview = ({
             <div className="flex flex-col flex-1 items-stretch gap-y-2 p-4">
                 <h2 className="font-bold text-lg uppercase">{title}</h2>
                 <p className="text-justify text-clamp-3">{description}</p>
-                <div className="flex gap-4 py-4">
+                <div className="flex flex-wrap gap-4 py-4">
                     {technologies?.includes("react") && (
                         <Badge variant="outline" className="flex items-center text-primary text-xs font-semibold uppercase gap-x-2">
                             <FaReact size={18} color="cyan" />
