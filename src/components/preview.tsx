@@ -23,7 +23,7 @@ export const Preview = ({
     githubUrl
 }: PreviewProps) => {
     return (
-        <div className="max-w-lg h-[500px] flex flex-col pb-4 rounded-lg shadow-md hover:shadow-lg hover:scale-105 cursor-pointer transition duration-300
+        <div className="max-w-lg h-[500px] flex flex-col pb-4 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition duration-300
         dark:bg-secondary">
             <img 
                 src={src}
