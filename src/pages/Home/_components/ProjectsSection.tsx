@@ -5,7 +5,7 @@ const projects = [
     {
         id: 1,
         title: "Fédération Française de Tennis de Table",
-        description: "Site officiel pour les championnats professionnels de tennis de table en France",
+        description: "Official website for professional table tennis championships in France",
         url: "https://www.fftt.com/pro",
         src: "fftt.png",
         technologies: ["react", "php", "mysql"],
@@ -13,14 +13,14 @@ const projects = [
     {
         id: 2,
         title: "Yobool",
-        description: "Yobool est une plateforme en ligne qui permet aux utilisateurs d'envoyer leur colis par l'intermédiaire de voyageurs proposant leur service.",
+        description: "Yobool is an online platform that enables users to send their parcels via travelers offering their service.",
         src: "yobool.png",
         technologies: ["reactjs", "rails", "tailwind", "shadcnui", "mysql"],
     },
     {
         id: 3,
         title: "Learning School",
-        description: "Learning School est une plateforme permettant aux utilisateurs de créer et suivre des cours en ligne.",
+        description: "Learning School is a platform enabling users to create and follow online courses.",
         url: "https://learning-school-orcin.vercel.app/",
         githubUrl: "https://github.com/YanM16M/learning-school",
         src: "learning-school.png",
@@ -29,7 +29,7 @@ const projects = [
     {
         id: 4,
         title: "Notion clone",
-        description: "Notion Clone est une réplique de la plateforme web Notion.",
+        description: "Notion Clone is a replica of the Notion web platform.",
         url: "https://lifen-swart.vercel.app/",
         githubUrl: "https://github.com/YanM16M/notion-clone",
         src: "notion.png",
