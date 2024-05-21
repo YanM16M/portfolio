@@ -9,7 +9,7 @@ export const AboutMeSection = () => {
                 <p className="text-justify">
                     I am a creative developer who live near Paris and I am really passionate about
                     development. I started developing 9 years ago in high school and I am always seeking for improvements.
-                    I love being productive and creating things in my spare time. Especially writing novels who helps me to express my imagination.
+                    I love being productive and creating things in my spare time.
                 </p>
                 <div className="w-full grid grid-cols-2 gap-y-2 gap-x-52">
                     <div className="">
