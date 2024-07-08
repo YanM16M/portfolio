@@ -58,7 +58,7 @@ const skills = [
 
 export const SkillsSection = () => {
     return (
-        <section className="flex flex-col items-center gap-20">
+        <section id="skills" className="flex flex-col items-center gap-20">
             <h1 className="text-5xl font-thin text-center">Skills</h1>
             <div className="flex flex-col items-center gap-y-10">
                 <h2 className="text-2xl">Front-End</h2>

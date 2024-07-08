@@ -1,6 +1,6 @@
 import cv from "@/assets/CV.pdf";
 
-import { Download } from "lucide-react";
+import { Download, Linkedin } from "lucide-react";
 
 import { GridBackground } from "@/components/ui/GridBackground";
 import { Button } from "@/components/ui/button";
@@ -8,15 +8,8 @@ import { FiGithub } from "react-icons/fi";
 
 export const WelcomeSection = () => {
 
-    // const getNumberOfExperience = () => {
-    //     const startDate = new Date("01/09/2020");
-    //     const today = new Date();
-
-    //     return (today.getFullYear() - startDate.getFullYear());
-    // }
-
     return (
-        <section className="h-full flex flex-col gap-y-3 items-center justify-center">
+        <section id="welcome" className="h-full flex flex-col gap-y-3 items-center justify-center">
             <GridBackground className="flex flex-col gap-y-3 items-center justify-center">
                 <h1 className="text-5xl text-white text-center font-anton text-stroke uppercase leading-tight tracking-wide
                 dark:text-white">
@@ -29,13 +22,13 @@ export const WelcomeSection = () => {
                     I am a frontend and backend developer
                 </span>
                 <div className="space-x-2">
-                    <Button className="font-bold" asChild>
-                        <a href="https://github.com/YanM16M" target="_blank">
-                            Github
-                            <FiGithub className="ml-2" />
+                    <Button className="font-semibold bg-blue-500 hover:bg-blue-500/90" asChild>
+                        <a href="https://www.linkedin.com/in/yanis-martinon-381651194/" target="_blank">
+                            LinkedIn
+                            <Linkedin className="ml-2" />
                         </a>
                     </Button>
-                    <Button variant="custom" asChild>
+                    <Button asChild className="font-semibold">
                         <a href={cv} target="_blank">
                             Download CV
                             <Download className="ml-2" />

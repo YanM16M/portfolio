@@ -39,7 +39,7 @@ const projects = [
 
 export const ProjectsSection = () => {
     return (
-        <section className="flex flex-col items-center gap-y-20">
+        <section id="projects" className="flex flex-col items-center gap-y-20">
             <h1 className="font-thin text-5xl">Projects</h1>
             <div className="w-fit grid grid-cols-1 lg:grid-cols-2 gap-20">
               {projects.map((project) => (

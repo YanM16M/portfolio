@@ -2,7 +2,7 @@ import { User } from "lucide-react"
 
 export const AboutMeSection = () => {
     return (
-        <section className="flex flex-col items-center gap-20">
+        <section id="about" className="flex flex-col items-center gap-20">
             <h1 className="text-5xl font-thin text-center">About me</h1>
             <User size={72} />
             <div className="max-w-xl flex flex-col gap-10">

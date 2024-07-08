@@ -7,7 +7,7 @@ import { SiMalt } from "react-icons/si";
 
 export const ContactSection = () => {
     return (
-        <section className="flex flex-col gap-20">
+        <section id="contacts" className="flex flex-col gap-20">
             <h1 className="text-5xl font-thin text-center">Contact me</h1>
             <div className="w-full flex flex-col items-center justify-center gap-4">
                 <ContactCard 

@@ -1,13 +1,27 @@
-import { Link } from "react-router-dom"
-import { Button } from "./ui/button"
-import { FiGithub } from "react-icons/fi"
-import { LiaLinkedinIn } from "react-icons/lia"
-import { SiGmail } from "react-icons/si"
-import { cn } from "@/lib/utils"
-
-import { SiMalt } from "react-icons/si";
-
 import { useScrollTop } from "@/hooks/use-control-top";
+
+import { Link } from "react-router-dom";
+import { Button } from "./ui/button";
+
+const routes = [
+    {
+        href: "#about",
+        label: "About me",
+    },
+    {
+        href: "#projects",
+        label: "Projects",
+    },
+    {
+        href: "#skills",
+        label: "Skills",
+    },
+    {
+        href: "#contacts",
+        label: "Contact",
+    },
+]
+
 
 export const Navbar = () => {
     const scrolled = useScrollTop();
@@ -17,43 +31,19 @@ export const Navbar = () => {
     }
 
     return (
-        <nav className="fixed top-0 w-full flex items-center justify-between max-sm:justify-center px-6 py-8 z-[50]">
-            <Link to="/" onClick={onClick} className="max-sm:hidden font-medium text-3xl drop-shadow-md">
+        <nav className="fixed top-0 w-full flex items-center justify-between max-md:justify-center px-6 py-8 z-[50]">
+            <Link to="/" onClick={onClick} className="max-md:hidden font-medium text-3xl drop-shadow-md">
                 Yanis Martinon
             </Link>
-            <div className="flex items-center gap-2 ">
-                <Button variant="outline" className={cn(
-                    "w-[64px] hover:text-emerald-500 hover:cursor-pointer transition",
-                    scrolled && "shadow-md"
-                )} asChild>
-                    <a href="https://github.com/YanM16M" target="_blank">
-                        <FiGithub size={18} />
+            <div className="flex items-center gap-12">
+                {routes.map((route) => (
+                    <a
+                        href={route.href}
+                        className="font-light text-xl hover:text-emerald-500"
+                    >
+                        {route.label}
                     </a>
-                </Button>
-                <Button variant="outline" className={cn(
-                    "w-[64px] hover:text-blue-500 hover:cursor-pointer transition",
-                    scrolled && "shadow-md"
-                )} asChild>
-                    <a href="https://www.linkedin.com/in/yanis-martinon-381651194/" target="_blank">
-                        <LiaLinkedinIn size={18} />
-                    </a>
-                </Button>
-                <Button variant="outline" className={cn(
-                    "w-[64px] hover:text-red-500 hover:cursor-pointer transition",
-                    scrolled && "shadow-md"
-                )} asChild>
-                    <a href="mailto:yanis.martinon2@gmail.com" target="_blank">
-                        <SiGmail size={18} />
-                    </a>
-                </Button>
-                <Button variant="outline" className={cn(
-                    "w-[64px] hover:text-red-500 hover:cursor-pointer transition",
-                    scrolled && "shadow-md"
-                )} asChild>
-                    <a href="https://www.malt.fr/profile/yanismartinon" target="_blank">
-                        <SiMalt  size={40} className="shrink-0" />
-                    </a>
-                </Button>
+                ))}
             </div>
         </nav>
     )
