@@ -1,5 +1,3 @@
-import { useScrollTop } from "@/hooks/use-control-top";
-
 import { Link } from "react-router-dom";
 
 const routes = [
@@ -23,8 +21,6 @@ const routes = [
 
 
 export const Navbar = () => {
-    const scrolled = useScrollTop();
-
     const onClick = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
