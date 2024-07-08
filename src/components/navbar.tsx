@@ -5,6 +5,8 @@ import { LiaLinkedinIn } from "react-icons/lia"
 import { SiGmail } from "react-icons/si"
 import { cn } from "@/lib/utils"
 
+import { SiMalt } from "react-icons/si";
+
 import { useScrollTop } from "@/hooks/use-control-top";
 
 export const Navbar = () => {
@@ -21,7 +23,7 @@ export const Navbar = () => {
             </Link>
             <div className="flex items-center gap-2 ">
                 <Button variant="outline" className={cn(
-                    "hover:text-emerald-500 hover:cursor-pointer transition",
+                    "w-[64px] hover:text-emerald-500 hover:cursor-pointer transition",
                     scrolled && "shadow-md"
                 )} asChild>
                     <a href="https://github.com/YanM16M" target="_blank">
@@ -29,7 +31,7 @@ export const Navbar = () => {
                     </a>
                 </Button>
                 <Button variant="outline" className={cn(
-                    "hover:text-emerald-500 hover:cursor-pointer transition",
+                    "w-[64px] hover:text-blue-500 hover:cursor-pointer transition",
                     scrolled && "shadow-md"
                 )} asChild>
                     <a href="https://www.linkedin.com/in/yanis-martinon-381651194/" target="_blank">
@@ -37,11 +39,19 @@ export const Navbar = () => {
                     </a>
                 </Button>
                 <Button variant="outline" className={cn(
-                    "hover:text-emerald-500 hover:cursor-pointer transition",
+                    "w-[64px] hover:text-red-500 hover:cursor-pointer transition",
                     scrolled && "shadow-md"
                 )} asChild>
                     <a href="mailto:yanis.martinon2@gmail.com" target="_blank">
                         <SiGmail size={18} />
+                    </a>
+                </Button>
+                <Button variant="outline" className={cn(
+                    "w-[64px] hover:text-red-500 hover:cursor-pointer transition",
+                    scrolled && "shadow-md"
+                )} asChild>
+                    <a href="https://www.malt.fr/profile/yanismartinon" target="_blank">
+                        <SiMalt  size={40} className="shrink-0" />
                     </a>
                 </Button>
             </div>

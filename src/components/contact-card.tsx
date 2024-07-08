@@ -5,7 +5,6 @@ interface ContactCardProps {
     title: string;
     url: string;
     icon: React.ReactNode;
-    color?: string;
     description?: string;
 }
 
