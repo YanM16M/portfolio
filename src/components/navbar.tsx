@@ -34,7 +34,7 @@ export const Navbar = () => {
                 {routes.map((route) => (
                     <a
                         href={route.href}
-                        className="font-light text-xl hover:text-emerald-500"
+                        className="font-light text-xl max-sm:text-lg hover:text-emerald-500"
                     >
                         {route.label}
                     </a>
