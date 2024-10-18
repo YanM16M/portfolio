@@ -32,7 +32,7 @@ export const ContactSection = () => {
                     title="Répertoires GitHub"
                     description="GitHub"
                     icon={<GithubIcon size={24} className="group-hover:text-green-500" />}
-                    url="https://www.malt.fr/profile/yanismartinon"
+                    url="https://github.com/YanM16M"
                 />
             </div>
             <h2 className="text-2xl text-center font-thin ">
