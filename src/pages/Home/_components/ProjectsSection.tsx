@@ -19,11 +19,11 @@ const projects = [
     },
     {
         id: 3,
-        title: "Learning School",
-        description: "Learning School is a platform enabling users to create and follow online courses.",
-        url: "https://learning-school-orcin.vercel.app/",
-        githubUrl: "https://github.com/YanM16M/learning-school",
-        src: "learning-school.png",
+        title: "Finance App",
+        description: "Finance App is a platform enabling users to manage their expenses and income.",
+        url: "https://finance-app-lovat.vercel.app/",
+        githubUrl: "https://github.com/YanM16M/finance-app",
+        src: "finance-app.png",
         technologies: ["nextjs", "mysql", "tailwind", "shadcnui"],
     },
     {
