@@ -17,6 +17,14 @@ const projects = [
         technologies: ["reactjs", "convex", "tailwind"],
     },
     {
+        title: "Notion clone",
+        description: "Notion Clone is a replica of the Notion web platform.",
+        url: "https://lifen-swart.vercel.app/",
+        githubUrl: "https://github.com/YanM16M/notion-clone",
+        src: "notion.png",
+        technologies: ["nextjs", "tailwind", "shadcnui"],
+    },
+    {
         title: "Yobool",
         description:
             "Yobool is an online platform that enables users to send their parcels via travelers offering their service.",
@@ -31,14 +39,6 @@ const projects = [
         githubUrl: "https://github.com/YanM16M/finance-app",
         src: "finance-app.png",
         technologies: ["nextjs", "mysql", "tailwind", "shadcnui"],
-    },
-    {
-        title: "Notion clone",
-        description: "Notion Clone is a replica of the Notion web platform.",
-        url: "https://lifen-swart.vercel.app/",
-        githubUrl: "https://github.com/YanM16M/notion-clone",
-        src: "notion.png",
-        technologies: ["nextjs", "tailwind", "shadcnui"],
     },
 ];
 
