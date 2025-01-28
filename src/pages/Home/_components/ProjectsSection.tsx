@@ -1,33 +1,38 @@
 import { Preview } from "@/components/preview";
 
-
 const projects = [
     {
-        id: 1,
         title: "Fédération Française de Tennis de Table",
-        description: "Official website for professional table tennis championships in France",
+        description:
+            "Official website for professional table tennis championships in France",
         url: "https://www.fftt.com/pro",
         src: "fftt.png",
         technologies: ["react", "php", "mysql"],
     },
     {
-        id: 2,
-        title: "Yobool",
-        description: "Yobool is an online platform that enables users to send their parcels via travelers offering their service.",
-        src: "yobool.png",
-        technologies: ["reactjs", "rails", "tailwind", "shadcnui", "mysql"],
+        title: "GabInvest",
+        description: "GabInvest offers a solution to help you buy real estate.",
+        url: "https://gab-funnel.vercel.app/?source=portfolio",
+        src: "gabinvest.png",
+        technologies: ["reactjs", "convex", "tailwind"],
     },
     {
-        id: 3,
+        title: "Yobool",
+        description:
+            "Yobool is an online platform that enables users to send their parcels via travelers offering their service.",
+        src: "yobool.png",
+        technologies: ["reactjs", "rails", "tailwind", "shadcnui"],
+    },
+    {
         title: "Finance App",
-        description: "Finance App is a platform enabling users to manage their expenses and income.",
+        description:
+            "Finance App is a platform enabling users to manage their expenses and income.",
         url: "https://finance-app-lovat.vercel.app/",
         githubUrl: "https://github.com/YanM16M/finance-app",
         src: "finance-app.png",
         technologies: ["nextjs", "mysql", "tailwind", "shadcnui"],
     },
     {
-        id: 4,
         title: "Notion clone",
         description: "Notion Clone is a replica of the Notion web platform.",
         url: "https://lifen-swart.vercel.app/",
@@ -35,19 +40,16 @@ const projects = [
         src: "notion.png",
         technologies: ["nextjs", "tailwind", "shadcnui"],
     },
-]
+];
 
 export const ProjectsSection = () => {
     return (
         <section id="projects" className="flex flex-col items-center gap-y-20">
             <h1 className="font-thin text-5xl">Projects</h1>
             <div className="w-fit grid grid-cols-1 lg:grid-cols-2 gap-20">
-              {projects.map((project) => (
-                <Preview 
-                    key={project.id}
-                    {...project}
-                />
-              ))}
+                {projects.map((project, index) => (
+                    <Preview key={index} {...project} />
+                ))}
             </div>
         </section>
     );
