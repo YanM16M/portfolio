@@ -126,7 +126,9 @@ export const Preview = ({
                         </a>
                     </Button>
                 ) : (
-                    <Button disabled={true}>No Source Code</Button>
+                    <Button variant="outline" disabled={true}>
+                        No Source Code
+                    </Button>
                 )}
             </div>
         </div>
