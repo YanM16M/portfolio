@@ -111,18 +111,16 @@ export const Preview = ({
             </div>
             <div className="flex gap-2 px-4">
                 {url ? (
-                    <Button variant="outline" asChild>
+                    <Button asChild>
                         <a href={url} target="_blank">
                             See Live
                         </a>
                     </Button>
                 ) : (
-                    <Button variant="outline" disabled={true}>
-                        No Live
-                    </Button>
+                    <Button disabled={true}>No Live</Button>
                 )}
                 {githubUrl ? (
-                    <Button asChild>
+                    <Button variant="outline" asChild>
                         <a href={githubUrl} target="_blank">
                             Source Code
                         </a>
