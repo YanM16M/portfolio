@@ -6,14 +6,20 @@ const projects = [
         description:
             "Official website for professional table tennis championships in France",
         url: "https://www.fftt.com/pro",
-        src: "fftt.png",
+        src: ["fftt.png"],
         technologies: ["react", "php", "mysql"],
+    },
+    {
+        title: "Orientrek",
+        description: "Orientrek: Trekking holidays in Japan and France",
+        src: ["orientrek1.png", "orientrek2.png"],
+        technologies: ["nextjs", "prisma", "supabase", "postgresql"],
     },
     {
         title: "GabInvest",
         description: "GabInvest offers a solution to help you buy real estate.",
         url: "https://gab-funnel.vercel.app/?source=portfolio",
-        src: "gabinvest.png",
+        src: ["gabinvest.png"],
         technologies: ["reactjs", "convex", "tailwind"],
     },
     {
@@ -21,14 +27,14 @@ const projects = [
         description: "Notion Clone is a replica of the Notion web platform.",
         url: "https://lifen-swart.vercel.app/",
         githubUrl: "https://github.com/YanM16M/notion-clone",
-        src: "notion.png",
+        src: ["notion.png"],
         technologies: ["nextjs", "tailwind", "shadcnui"],
     },
     {
         title: "Yobool",
         description:
             "Yobool is an online platform that enables users to send their parcels via travelers offering their service.",
-        src: "yobool.png",
+        src: ["yobool.png"],
         technologies: ["reactjs", "rails", "tailwind", "shadcnui"],
     },
     {
@@ -37,7 +43,7 @@ const projects = [
             "Finance App is a platform enabling users to manage their expenses and income.",
         url: "https://finance-app-lovat.vercel.app/",
         githubUrl: "https://github.com/YanM16M/finance-app",
-        src: "finance-app.png",
+        src: ["finance-app.png"],
         technologies: ["nextjs", "mysql", "tailwind", "shadcnui"],
     },
 ];
