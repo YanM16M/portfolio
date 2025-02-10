@@ -23,6 +23,7 @@ export interface PreviewProps {
     technologies?: technologiesType[];
     url?: string;
     githubUrl?: string;
+    soon?: boolean;
 }
 
 export const Preview = ({
@@ -32,6 +33,7 @@ export const Preview = ({
     technologies,
     url,
     githubUrl,
+    soon,
 }: PreviewProps) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -173,7 +175,7 @@ export const Preview = ({
                 {url ? (
                     <Button asChild>
                         <a href={url} target="_blank">
-                            See Live
+                            {soon ? <>Soon...</> : <>See live</>}
                         </a>
                     </Button>
                 ) : (

@@ -14,6 +14,7 @@ const projects: PreviewProps[] = [
         description: "Orientrek: Trekking holidays in Japan and France",
         src: ["orientrek1.png", "orientrek2.png"],
         technologies: ["nextjs", "prisma", "supabase", "postgresql"],
+        soon: true,
     },
     {
         title: "GabInvest",
