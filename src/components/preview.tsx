@@ -180,7 +180,6 @@ export const Preview = ({
                     </Button>
                 ) : (
                     <Button disabled={true}>
-                        {" "}
                         {soon ? <>Soon...</> : <>No live</>}
                     </Button>
                 )}
