@@ -1,13 +1,13 @@
-import { Preview } from "@/components/preview";
+import { Preview, PreviewProps } from "@/components/preview";
 
-const projects = [
+const projects: PreviewProps[] = [
     {
         title: "Fédération Française de Tennis de Table",
         description:
             "Official website for professional table tennis championships in France",
         url: "https://www.fftt.com/pro",
         src: ["fftt.png"],
-        technologies: ["react", "php", "mysql"],
+        technologies: ["reactjs", "php", "mysql"],
     },
     {
         title: "Orientrek",

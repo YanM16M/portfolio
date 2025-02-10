@@ -16,7 +16,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 
-interface PreviewProps {
+export interface PreviewProps {
     src: string[];
     title: string;
     description: string;
