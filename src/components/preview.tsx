@@ -175,11 +175,14 @@ export const Preview = ({
                 {url ? (
                     <Button asChild>
                         <a href={url} target="_blank">
-                            {soon ? <>Soon...</> : <>See live</>}
+                            See live
                         </a>
                     </Button>
                 ) : (
-                    <Button disabled={true}>No Live</Button>
+                    <Button disabled={true}>
+                        {" "}
+                        {soon ? <>Soon...</> : <>No live</>}
+                    </Button>
                 )}
                 {githubUrl && (
                     <Button variant="outline" asChild>
