@@ -31,23 +31,6 @@ const projects: PreviewProps[] = [
         src: ["gabinvest.png"],
         technologies: ["reactjs", "convex", "tailwind"],
     },
-    {
-        title: "Notion clone",
-        description: "Notion Clone is a replica of the Notion web platform.",
-        url: "https://lifen-swart.vercel.app/",
-        githubUrl: "https://github.com/YanM16M/notion-clone",
-        src: ["notion.png"],
-        technologies: ["nextjs", "tailwind", "shadcnui"],
-    },
-    {
-        title: "Finance App",
-        description:
-            "Finance App is a platform enabling users to manage their expenses and income.",
-        url: "https://finance-app-lovat.vercel.app/",
-        githubUrl: "https://github.com/YanM16M/finance-app",
-        src: ["finance-app.png"],
-        technologies: ["nextjs", "mysql", "tailwind", "shadcnui"],
-    },
 ];
 
 export const ProjectsSection = () => {
