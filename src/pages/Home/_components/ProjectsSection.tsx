@@ -10,6 +10,14 @@ const projects: PreviewProps[] = [
         technologies: ["reactjs", "php", "mysql"],
     },
     {
+        title: "Yobool",
+        description:
+            "Yobool is an online platform that enables users to send their parcels via travelers offering their service.",
+        url: "https://www.yobool.com/fr",
+        src: ["yobool.png"],
+        technologies: ["reactjs", "rails", "tailwind", "shadcnui"],
+    },
+    {
         title: "Orientrek",
         description: "Orientrek: Trekking holidays in Japan and France",
         src: ["orientrek1.png", "orientrek2.png"],
@@ -30,13 +38,6 @@ const projects: PreviewProps[] = [
         githubUrl: "https://github.com/YanM16M/notion-clone",
         src: ["notion.png"],
         technologies: ["nextjs", "tailwind", "shadcnui"],
-    },
-    {
-        title: "Yobool",
-        description:
-            "Yobool is an online platform that enables users to send their parcels via travelers offering their service.",
-        src: ["yobool.png"],
-        technologies: ["reactjs", "rails", "tailwind", "shadcnui"],
     },
     {
         title: "Finance App",
