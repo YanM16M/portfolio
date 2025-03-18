@@ -15,7 +15,7 @@ const projects: PreviewProps[] = [
             "Yobool is an online platform that enables users to send their parcels via travelers offering their service.",
         url: "https://www.yobool.com/fr",
         src: ["yobool.png"],
-        technologies: ["reactjs", "rails", "tailwind", "shadcnui"],
+        technologies: ["nextjs", "rails", "tailwind", "shadcnui"],
     },
     {
         title: "Orientrek",
