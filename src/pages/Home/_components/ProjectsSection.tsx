@@ -10,19 +10,19 @@ const projects: PreviewProps[] = [
         technologies: ["reactjs", "php", "mysql"],
     },
     {
+        title: "Orientrek",
+        description: "Orientrek: Trekking holidays in Japan and France",
+        src: ["orientrek1.png", "orientrek2.png"],
+        technologies: ["nextjs", "prisma", "supabase", "postgresql"],
+        soon: true,
+    },
+    {
         title: "Yobool",
         description:
             "Yobool is an online platform that enables users to send their parcels via travelers offering their service.",
         url: "https://www.yobool.com/fr",
         src: ["yobool.png"],
         technologies: ["nextjs", "rails", "tailwind", "shadcnui"],
-    },
-    {
-        title: "Orientrek",
-        description: "Orientrek: Trekking holidays in Japan and France",
-        src: ["orientrek1.png", "orientrek2.png"],
-        technologies: ["nextjs", "prisma", "supabase", "postgresql"],
-        soon: true,
     },
     {
         title: "GabInvest",
