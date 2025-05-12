@@ -1,4 +1,7 @@
+import { useMutation } from "convex/react";
 import { useEffect, useState } from "react";
+
+import { api } from "../../convex/_generated/api";
 
 import { technologiesType } from "@/lib/types";
 
@@ -20,6 +23,7 @@ export interface PreviewProps {
     src: string[];
     title: string;
     description: string;
+    beforeSrc?: string[];
     technologies?: technologiesType[];
     url?: string;
     githubUrl?: string;
@@ -37,6 +41,8 @@ export const Preview = ({
 }: PreviewProps) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+    const addFollows = useMutation(api.follows.addFollows);
+
     useEffect(() => {
         if (src.length > 1) {
             const interval = setInterval(() => {
@@ -47,6 +53,12 @@ export const Preview = ({
             return () => clearInterval(interval);
         }
     }, [src]);
+
+    const handleSeeLive = () => {
+        addFollows({
+            clickOn: title,
+        });
+    };
 
     return (
         <div
@@ -173,7 +185,7 @@ export const Preview = ({
             </div>
             <div className="flex gap-2 px-4">
                 {url ? (
-                    <Button asChild>
+                    <Button onClick={handleSeeLive} asChild>
                         <a href={url} target="_blank">
                             See live
                         </a>
