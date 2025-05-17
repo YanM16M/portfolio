@@ -26,6 +26,6 @@
       ]
     },
   },
-  "include": ["src", "src/convex/schema.ts", "src/convex/follows.ts"],
+  "include": ["src", "convex/schema.ts", "convex/follows.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
