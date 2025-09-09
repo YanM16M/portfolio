@@ -7,12 +7,14 @@ import { Download, Linkedin } from "lucide-react";
 import { GridBackground } from "@/components/ui/GridBackground";
 import { Button } from "@/components/ui/button";
 import { useMutation } from "convex/react";
+import { getUserId } from "@/lib/utils";
 
 export const WelcomeSection = () => {
     const addFollows = useMutation(api.follows.addFollows);
 
     const handleClick = (title: string) => {
         addFollows({
+            userId: getUserId(),
             clickOn: title,
         });
     };

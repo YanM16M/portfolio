@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { api } from "../../convex/_generated/api";
 
 import { ExternalLink } from "lucide-react";
+import { getUserId } from "@/lib/utils";
 
 interface ContactCardProps {
     title: string;
@@ -23,6 +24,7 @@ export const ContactCard = ({
 
     const handleOnClick = () => {
         addFollow({
+            userId: getUserId(),
             clickOn: description || url,
         });
     };

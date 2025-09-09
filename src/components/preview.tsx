@@ -18,6 +18,7 @@ import { SiShadcnui, SiMysql, SiRubyonrails } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
+import { getUserId } from "@/lib/utils";
 
 export interface PreviewProps {
     src: string[];
@@ -56,6 +57,7 @@ export const Preview = ({
 
     const handleSeeLive = () => {
         addFollows({
+            userId: getUserId(),
             clickOn: title,
         });
     };
