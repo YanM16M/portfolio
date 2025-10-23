@@ -5,5 +5,6 @@ export default defineSchema({
     follows: defineTable({
         userId: v.optional(v.string()),
         clickOn: v.string(),
+        utmSource: v.optional(v.string()),
     }),
 });
