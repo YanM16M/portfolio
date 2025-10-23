@@ -16,6 +16,7 @@ export const WelcomeSection = () => {
         addFollows({
             userId: getUserId(),
             clickOn: title,
+            utmSource: document.referrer,
         });
     };
 

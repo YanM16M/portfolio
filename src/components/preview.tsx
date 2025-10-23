@@ -59,6 +59,7 @@ export const Preview = ({
         addFollows({
             userId: getUserId(),
             clickOn: title,
+            utmSource: document.referrer,
         });
     };
 

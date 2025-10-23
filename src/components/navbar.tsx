@@ -44,6 +44,7 @@ export const Navbar = () => {
             addFollows({
                 userId,
                 clickOn: pathname,
+                utmSource: document.referrer,
             });
         }
     }, [addFollows]);

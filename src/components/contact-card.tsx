@@ -26,6 +26,7 @@ export const ContactCard = ({
         addFollow({
             userId: getUserId(),
             clickOn: description || url,
+            utmSource: document.referrer,
         });
     };
 
